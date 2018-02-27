@@ -13,7 +13,7 @@
         $('#cat-image').attr('src','images/cat-pizza.png');
 
 // And show the correct content (and hide any other content)
-		$('.holder').addClass('hide');
+		$('.holder').slideUp()addClass('hide');
 		if ($('.pizza-holder').hasClass('hide')){
 		$('.pizza-holder').slideDown().removeClass('hide');
 	} else {
