@@ -1,0 +1,249 @@
+/*
+Project Name: Boredom Cat
+Author: Anna Zambelli
+Developer @GA in Chi
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #043049;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Header */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: url(../images/sky.jpg) no-repeat center top darkblue;
+
+}
+
+.container img {
+  width: 100%;
+  margin-bottom: -5%;
+}
+
+#name {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: -2%;
+  font-family: 'Indie Flower';
+}
+
+hr {
+  margin: -1%;
+  border: 1px solid #b4ff00;
+}
+
+/*Nav*/
+
+.nav {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+  float: left;
+}
+
+nav img {
+  width: 15%;
+  margin: 3%;
+}
+
+
+/*Pizza Section*/
+
+.holder {
+  width: 100%;
+}
+
+.pizza-holder {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+.pizza-holder h1 {
+  font-family: 'Bitter';
+  font-size: 40px;
+}
+
+.pizza img {
+  height: 300px;
+
+}
+
+.pizza {
+  float: left;
+  margin: 20px;
+  width: 44%;
+}
+
+/*Writing Content*/
+
+.work-holder {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.content {
+  height: 980px;
+  width: 41%;
+  float: left;
+  margin-left: 5%;
+  margin-top: 5%;
+  border: #eceaea 2px solid;
+  padding: 12px;
+
+}
+
+.content img {
+    width: 100%;
+}
+
+.content h2 {
+  font-size: 24px;
+  color: black;
+}
+
+.content p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.work-holder h1 {
+  font-size: 40px;
+  font-family: 'Bitter', sans-serif;
+}
+
+.story {
+  font-size: 11px;
+  font-family: serif;
+  text-align: left;
+}
+
+
+.read-more {
+  font-size: 24px;
+}
+
+
+/*Bread Section*/
+
+.bread-holder {
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.bread-holder h1 {
+  font-family: 'Bitter';
+  font-size: 40px;
+}
+
+.ingredients {
+  margin-top: 20px;
+  padding-left: 10%;
+  margin-bottom: 20px;
+}
+
+.ingredients h2 {
+  font-weight: 600;
+}
+
+.instructions h2 {
+  font-size: 1.2em;
+  margin: 5% 0% 0% 6%;
+  font-weight: 600;
+}
+
+.instructions li {
+    list-style-type: decimal;
+    padding: 1%;
+    margin-left: 13%;
+    font-size: 19px;
+}
+
+
+/*Peru Section*/
+
+.peru-holder {
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.peru-holder h1 {
+  font-family: 'Bitter';
+  font-size: 40px;
+}
+
+.peru-holder h2 {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/*Footer*/
+footer {
+  height: 100px;
+}
+
+.hide {
+  display: none;
+}
+
+
