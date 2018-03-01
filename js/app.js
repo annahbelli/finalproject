@@ -16,6 +16,9 @@
 		$('.holder').slideUp().addClass('hide');
 		if ($('.pizza-holder').hasClass('hide')){
 		$('.pizza-holder').slideDown().removeClass('hide');
+		$('html, body').animate({
+    		scrollTop: $(".pizza-holder").offset().top
+		}, 1000);
 	} else {
 		$('.pizza-holder').slideUp().addClass('hide');
 	}
@@ -35,6 +38,9 @@
 		$('.holder').slideUp().addClass('hide');
 		if ($('.work-holder').hasClass('hide')){
 		$('.work-holder').slideDown().removeClass('hide');
+		$('html, body').animate({
+    		scrollTop: $(".pizza-holder").offset().top
+		}, 1000);
 	} else {
 		$('.work-holder').slideUp().addClass('hide');
 	}
@@ -54,6 +60,9 @@
 		$('.holder').slideUp().addClass('hide');
 		if ($('.bread-holder').hasClass('hide')){
 		$('.bread-holder').slideDown().removeClass('hide');
+		$('html, body').animate({
+    		scrollTop: $(".pizza-holder").offset().top
+		}, 1000);
 	} else {
 		$('.bread-holder').slideUp().addClass('hide');
 	}
@@ -73,11 +82,35 @@
 		$('.holder').slideUp().addClass('hide');
 		if ($('.peru-holder').hasClass('hide')){
 		$('.peru-holder').slideDown().removeClass('hide');
+		$('html, body').animate({
+    		scrollTop: $(".pizza-holder").offset().top
+		}, 1000);
 	} else {
 		$('.peru-holder').slideUp().addClass('hide');
 	}
 
 });
+
+
+
+// MOBILE SECTION
+
+// Mobile Nav
+
+  var hamburger = document.querySelector('#hamburger');
+
+  var mNav = document.querySelector('.mobilenav');
+
+  hamburger.onclick = function(){
+
+    var status = mNav.classList.contains('active');
+
+    if(!status) {
+      mNav.classList.add('active');
+    } else {
+      mNav.classList.remove('active');
+    }
+  }
 
 
 

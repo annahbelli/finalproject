@@ -119,11 +119,6 @@ nav img {
   width: 100%;
 }
 
-.pizza-holder h1 {
-  font-family: 'Bitter';
-  font-size: 40px;
-}
-
 .pizza img {
   height: 300px;
 
@@ -133,6 +128,7 @@ nav img {
   float: left;
   margin: 20px;
   width: 44%;
+  text-align: center;
 }
 
 /*Writing Content*/
@@ -167,11 +163,6 @@ nav img {
   margin-top: 8px;
 }
 
-.work-holder h1 {
-  font-size: 40px;
-  font-family: 'Bitter', sans-serif;
-}
-
 .story {
   font-size: 11px;
   font-family: serif;
@@ -191,10 +182,6 @@ nav img {
   margin-top: 20px;
 }
 
-.bread-holder h1 {
-  font-family: 'Bitter';
-  font-size: 40px;
-}
 
 .ingredients {
   margin-top: 20px;
@@ -219,6 +206,14 @@ nav img {
     font-size: 19px;
 }
 
+.bread-holder img {
+  width: 40%;
+  float: right;
+  margin: 4%;
+  border: 2px solid #3206a1;
+  border-radius: 4%;
+}
+
 
 /*Peru Section*/
 
@@ -227,10 +222,6 @@ nav img {
   margin-top: 20px;
 }
 
-.peru-holder h1 {
-  font-family: 'Bitter';
-  font-size: 40px;
-}
 
 .peru-holder h2 {
   font-weight: 600;
@@ -245,5 +236,186 @@ footer {
 .hide {
   display: none;
 }
+
+/*COMMON STYLES*/
+
+.subhead {
+  color: #3206a1;
+  font-size: 40px;
+  font-family: 'Bitter', sans-serif;
+}
+
+
+
+
+
+/*MOBILE*/
+
+
+#hamburger {
+  border: 2px solid #b4ff00;
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+span.ham-line {
+  width: 40px;
+  margin: 2px;
+  height: 2px;
+  position: relative;
+  display: block;
+  background-color: #b4ff00;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+#mobile-only {
+  height: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.mobilenav {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 420px;
+  margin-top: -50%;
+  transform: translate(-110%, 100%);
+  transition: 1s all cubic-bezier(1, 0.25, 0.07, 0.96);
+}
+
+.mobilenav img {
+  width: 15%;
+  margin: 3%;
+}
+
+.mobilenav ul {
+  padding-left: 17px;
+}
+
+.mobile-nav-items {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.mobilenav.active {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  #hamburger {
+    display: inline-block;
+  }
+
+  .mobilenav.active {
+    display: block;
+    transform: translate(0%, 100%);
+  }
+
+  nav, hr {
+    display: none;
+  }
+
+  .container {
+    background-color: white;
+    background-image: none;
+  }
+
+  #name {
+    color: #3206a1;
+    font-size: 40px;
+    margin-top: 3%;
+  }
+
+  .subhead {
+    font-size: 25px;
+  }
+
+  .holder {
+    margin-top: 20%;
+  }
+
+  /*mobile pizza section*/
+
+.pizza img {
+  height: 200px;
+
+}
+
+.pizza {
+  float: none;
+  margin: 10px;
+  width: 100%;
+  padding-right: 7%;
+}
+
+/*mobile writing section*/
+
+.content {
+  height: 830px;
+  width: 88%;
+  float: none;
+  margin-left: 5%;
+  margin-top: 5%;
+  border: #eceaea 2px solid;
+  padding: 12px;
+
+}
+
+.content h2 {
+  font-size: 20px;
+  color: black;
+}
+
+.content p {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.story {
+  font-size: 10px;
+  font-family: serif;
+  text-align: left;
+}
+
+
+.read-more {
+  font-size: 20px;
+}
+
+/*Bread Mobile Section*/
+
+.instructions li {
+    list-style-type: decimal;
+    padding: 1%;
+    margin-left: 13%;
+    font-size: 13px;
+}
+
+.bread-holder h2 {
+  font-size: 16px;
+}
+
+.ingredients li {
+  font-size: 14px;
+}
+
+/*Peru Mobile Section*/
+
+.peru-holder h2 {
+  font-size: 18px;
+}
+
+.peru-holder p {
+  font-size: 12px;
+}
+
+}
+
 
 
