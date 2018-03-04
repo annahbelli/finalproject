@@ -74,7 +74,7 @@ a {
 
 .container img {
   width: 100%;
-  margin-bottom: -5%;
+  margin-bottom: -3%;
 }
 
 #name {
@@ -127,9 +127,15 @@ nav img {
 
 .pizza {
   float: left;
-  margin: 20px;
+  margin: 20px 10px 20px 10px;
   width: 44%;
   text-align: center;
+}
+
+.pizza-master {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /*Writing Content*/
@@ -227,6 +233,28 @@ nav img {
 .peru-holder h2 {
   font-weight: 600;
   margin-top: 20px;
+}
+
+.peru-holder p {
+  margin-top: 15px;
+  margin-left: 18px;
+}
+
+.peru-holder a {
+  color: #4286f4;
+  font-weight: 600;
+}
+
+.peru-holder .right {
+  float: right;
+  width: 40%;
+  margin: 5%;
+}
+
+.peru-holder .left {
+  float: left;
+  width: 40%;
+  margin: 5%;
 }
 
 /*Footer*/
@@ -414,6 +442,18 @@ span.ham-line {
 
 .peru-holder p {
   font-size: 12px;
+}
+
+.peru-holder .right {
+  float: none;
+  width: 90%;
+  text-align: center;
+}
+
+.peru-holder .left {
+  float: none;
+  width: 90%;
+  text-align: center;
 }
 
 }
